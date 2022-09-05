@@ -13,38 +13,30 @@ const typeDefs = gql`
     villeByName(nom: String!): Ville
     villeByDepartement(departement: String!): [Ville]
   }
-  type Mutation {
-    addVille(
-      nom: String
-      superficie: Int
-      nombreDhabitant: Int
-      nomDuMaire: String
-      departement: String
-    ): Ville
-  }
+ 
 `;
 
 const ville = [
   {
     nom: "Paris",
-    superficie: 110000,
-    nombreDhabitant: 1000,
-    nomDuMaire: "eskander",
+    superficie: 105444,
+    nombreDhabitant: 2161,
+    nomDuMaire: "Yasmine",
     departement: "ile de france",
   },
   {
-    nom: "Lyon",
-    superficie: 200000,
+    nom: "Toulouse",
+    superficie: 300000,
     nombreDhabitant: 10000,
-    nomDuMaire: "jean",
-    departement: "Rhone alpes",
+    nomDuMaire: "Alex",
+    departement: "Haute-Garonne",
   },
   {
-    nom: "Saint-Étienne",
+    nom: "Nice",
     superficie: 30000,
     nombreDhabitant: 10000,
-    nomDuMaire: "Marc",
-    departement: "Rhone alpes",
+    nomDuMaire: "Jack",
+    departement: "Provence-Alpes-Côte d'Azur",
   },
 ];
 
